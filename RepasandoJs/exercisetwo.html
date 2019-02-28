@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendiendo javaScript</title>
+</head>
+<body>
+    <h1>Exercise js</h1>
+    <script>
+        let hour=0;
+            hour=parseInt(prompt("Ingrese la hora actual"));
+if (hour>0 && hour<12) {
+    console.log("Buenos Dias");
+} else if (hour>12 && hour<18) {
+    console.log("Buenas tardes");
+} else if(hour>18 && hour<=24){
+    console.log("Buenas noches");
+} else if(hour>=25){
+    console.warn("Hora invalida");
+} else if (hour<=0) {
+    console.warn("Hora invalida");
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprendiendo javaScript</title>
+</head>
+<body>
+    <h1>Exercise js</h1>
+    <script>
+    // var score;
+    // score.parseInt(prompt("Ingrese su puntaje"));
+    // if (isNaN(score)) {
+    //     alert("no es un numero");
+    // } else {
+    //     console.log('su puntaje fue $(score)');
+    // };
+    var money=0;
+        money=parseInt(prompt("Ingrese su saldo"));
+    let totalcar=0;
+        totalcar=parseInt(prompt("Ingrese el valor de la compra"));
+    let card= confirm('deseas pagar con tarjeta');
+
+        if(card==true){
+            console.log("pago con tarjeta");
+        }
+    if (money<=totalcar || money>totalcar && card!=0 ) {
+         alert("Saldo insuficiente para este servicio");
+         money=parseInt(prompt("Ingrese su saldo"));
+         totalcar=parseInt(prompt("Ingrese el valor de la compra"));
+     } else{
+     console.log("pago correcto");
+     };
+    </script>
+</body>
+</html>
